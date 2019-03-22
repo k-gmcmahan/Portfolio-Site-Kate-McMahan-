@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <title>Kate McMahan-UX Designer</title>
   <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="img/icon.png" alt="Kate McMahan">
+  <header class="header">
+    <div class="header wrapper">
+      <img class="logo" src="img/icon.png" alt="Kate McMahan">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -21,61 +25,61 @@
     </div>
   </header>
   <main>
-    <div>
-      <div>
+    <div class="hero section">
+      <div class="hero wrapper">
         <h1>Hi, I'm Kate McMahan.<span> I’m a Philadelphia-based User Experience Designer who strives to solve design problems while placing the
             needs of humans first.</span></h1>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="work section">
+      <div class="work wrapper">
         <h2>My Work</h2>
-        <div>
-          <div>
+        <div class="project 1">
+          <div class="column 1">
             <picture>
               <source srcset="img/600px/Project-StudyFlex/StudyFlex_mockup@1x.jpg" media="(max-width:767px)">
               <img src="img/1200px/Project-StudyFlex/StudyFlex_mockup@2x.jpg" alt="StudyFlex Mockup">
             </picture>
           </div>
-          <div>
+          <div class="column 2">
             <h3>StudyFlex</h3>
             <p>Conducted thorough competitive research and
               implimented the design thinking process to create this flashcard
               app that emphasizes adaptably across different subjects of
               study.</p>
-            <a href="#">View more</a>
+            <a href="studyflex.html" class="button">View more</a>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="project 2">
+          <div class="column 1">
             <picture>
               <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_mockup@1x.jpg" media="(max-width:767px)">
               <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_mockup@2x.jpg" alt="Schnitzeljagd Mockup">
             </picture>
           </div>
-          <div>
+          <div class="column 2">
             <h3>Schnitzeljagd</h3>
             <p>An open-source scavenger hunting app with
               robust social features that was created and improved through
               user interviews, card sorting, user flows, usability testing, A/B
               testing, and peer reviews.</p>
-            <a href="schnitzeljagd.html">View more</a>
+            <a href="schnitzeljagd.html" class="button">View more</a>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <footer id="contact">
-    <div>
+  <footer class="footer" id="contact">
+    <div class="footer wrapper">
       <h2>Contact Me</h2>
       <p>
         Like my work? Let's connect! Call: <a href="tel:6096131139">609-613-1139</a> or Skype me at <a href="skype:k_gmcmahan">k_gmcmahan</a>. Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:kate.mcdesigns@gmail.com">Email me</a>
+        <a href="mailto:kate.mcdesigns@gmail.com" class="button-secondary">Email me</a>
       </div>
-      <div>
-        <ul>
+      <div class="media container">
+        <ul class="media icons">
           <li><a href="https://twitter.com/k_gmcmahan" target="_blank"><svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path
