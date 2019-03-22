@@ -1,0 +1,117 @@
+/*
+Colors used:
+Primary Color (Purple): #714476; RGB (113,68,118)
+Secondary Color (Orange): #E38C3F; RGB (227,140,63)
+Balancing Color (Red): #CE695B; RGB (206,105,91)
+Background Color (White): #FFFFFF; RGB (255,255,255)
+*/
+/*text styling*/
+body {
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #E38C3F;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #714476;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #E38C3F;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+  color: #CE695B;
+}
+
+strong {
+  font-weight: 700;
+  color: #714476;
+}
+
+/* image styling*/
+img {
+  width: 100%;
+}
+
+/* link styling*/
+a {
+  color: #714476;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #714476;
+}
+
+a:hover,
+a:focus {
+  color: #CE695B;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #CE695B;
+}
+
+/* button styling*/
+.button {
+  display: inline-block;
+  background-color: #CE695B;
+  color: #ffffff !important;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 30px;
+  border-bottom: 2px solid #CE695B;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover, .button:focus {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: #CE695B !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #CE695B;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #CE695B;
+  color: #ffffff !important;
+  text-decoration: none;
+  opacity: 0.8;
+}
