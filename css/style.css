@@ -5,6 +5,10 @@ Secondary Color (Orange): #E38C3F; RGB (227,140,63)
 Balancing Color (Red): #CE695B; RGB (206,105,91)
 Background Color (White): #FFFFFF; RGB (255,255,255)
 */
+* {
+  box-sizing: border-box;
+}
+
 /*text styling*/
 body {
   background-color: #ffffff;
@@ -54,6 +58,43 @@ strong {
   color: #714476;
 }
 
+.footer h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+#hero span {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #FFFFFF;
+}
+
+#contact p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #FFFFFF;
+}
+
 /* image styling*/
 img {
   width: 100%;
@@ -77,6 +118,40 @@ a:focus {
 
 a:active {
   color: #CE695B;
+}
+
+#header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#header a:hover,
+a:focus {
+  color: #E38C3F;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#header a:active {
+  color: #E38C3F;
+  font-weight: 700;
+}
+
+#contact a {
+  color: #E38C3F;
+  text-decoration: none;
+}
+
+#contact a:hover,
+a:focus {
+  color: #E38C3F;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#contact a:active {
+  color: #E38C3F;
+  font-weight: 700;
 }
 
 /* button styling*/
@@ -114,4 +189,117 @@ a:active {
   color: #ffffff !important;
   text-decoration: none;
   opacity: 0.8;
+}
+
+#contact .button-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: #FFFFFF !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+}
+
+#contact .button-secondary:hover, .button-secondary:focus {
+  background-color: #CE695B;
+  color: #ffffff !important;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* Layout styling */
+header {
+  background-color: #714476;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.43);
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  /*Places all navigation elements in-line*/
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  color: #4a4a4a;
+  /*Adds padding between navigation elements*/
+}
+
+main {
+  padding-top: 180px;
+}
+
+footer {
+  background-color: #714476;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.43);
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.polished-.button {
+  text-align: center;
+}
+
+#hero {
+  background-color: #E38C3F;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact ul>li {
+  display: inline-block
+}
+
+#about {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#about p, h3, li {
+  text-align: left;
+}
+
+#approach {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#approach p {
+  text-align: left;
 }
