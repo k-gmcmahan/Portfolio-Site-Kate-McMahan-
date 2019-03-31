@@ -182,12 +182,14 @@ a:focus {
   padding: 10px;
   border-radius: 30px;
   border: 2px solid #CE695B;
+  transition: 0.2s opacity;
 }
 
 .button-secondary:hover, .button-secondary:focus {
   background-color: #CE695B;
   color: #ffffff !important;
   text-decoration: none;
+  font-weight: 700;
   opacity: 0.8;
 }
 
@@ -214,6 +216,7 @@ header {
   text-align: center;
   padding: 10px 0;
   position: fixed;
+  width: 100%;
   box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.43);
 }
 
@@ -246,7 +249,6 @@ footer {
   background-color: #714476;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.43);
 }
 
 .container {
@@ -302,4 +304,116 @@ footer {
 
 #approach p {
   text-align: left;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+
+  main {
+    padding-top: 140px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about .profile {
+    display: inline;
+  }
+}
+
+/* ==============================
+  CSS Animation
+  ================================= */
+@keyframes color-change {
+  0% {
+    fill: #CE695B;
+  }
+
+  50% {
+    fill: #839788;
+  }
+
+  100% {
+    fill: #73877B;
+  }
+}
+
+@keyframes background-scale {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(0.7);
+  }
+}
+
+.trees, .cloud_1, .cloud_2, .cloud_3 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.background {
+  animation: 30s background-scale infinite alternate linear;
 }
