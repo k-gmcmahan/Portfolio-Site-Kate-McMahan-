@@ -348,7 +348,6 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 }
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -376,10 +375,6 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #about .profile {
-    display: inline;
   }
 }
 
