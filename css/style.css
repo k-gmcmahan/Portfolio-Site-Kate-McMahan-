@@ -99,7 +99,9 @@ strong {
 img {
   width: 100%;
 }
-
+.project-details {
+  display: none;
+}
 /* link styling*/
 a {
   color: #714476;
