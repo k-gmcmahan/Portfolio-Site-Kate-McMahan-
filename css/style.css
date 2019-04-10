@@ -102,6 +102,9 @@ img {
 .project-details {
   display: none;
 }
+.profile {
+  width:40%;
+}
 /* link styling*/
 a {
   color: #714476;
