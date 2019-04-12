@@ -65,6 +65,10 @@ strong {
   text-align: center;
 }
 
+.project-details {
+  color: #CE695B;
+}
+
 #hero h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -99,12 +103,11 @@ strong {
 img {
   width: 100%;
 }
-.project-details {
-  display: none;
-}
+
 .profile {
-  width:40%;
+  width: 40%;
 }
+
 /* link styling*/
 a {
   color: #714476;
@@ -215,39 +218,38 @@ a:focus {
   opacity: 0.8;
 }
 
+/* js styling*/
+.project {
+  text-align: center;
+}
+
+.project-details {
+  display: none;
+}
+
 /* Layout styling */
 header {
   background-color: #714476;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.43);
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
   display: inline-block;
+  padding-left: 15px;
   /*Places all navigation elements in-line*/
 }
 
-nav>ul>li>a {
-  padding: 0 15px;
-  color: #4a4a4a;
-  /*Adds padding between navigation elements*/
-}
-
 main {
-  padding-top: 180px;
+  padding-top: 145px;
 }
 
 footer {
@@ -271,6 +273,36 @@ footer {
 
 .polished-.button {
   text-align: center;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -334,6 +366,23 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    /*Places all navigation elements in-line*/
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -353,6 +402,7 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -380,6 +430,10 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .picture-row {
+    display: inline-flex;
   }
 }
 
