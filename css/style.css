@@ -225,6 +225,7 @@ a:focus {
 
 .project-details {
   display: none;
+  text-align: center!important;
 }
 
 /* Layout styling */
