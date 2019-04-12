@@ -9,19 +9,23 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
   <header id="header">
-    <div class="header wrapper">
-      <img class="logo" src="img/icon.svg" alt="Kate McMahan">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/icon.svg" alt="Kate McMahan">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -63,15 +67,25 @@
               and overall style. I also conducted user interviews to meet users face-to-face and learn about their experiences with scavenger
               hunting and social gaming apps. <strong>Competitive research analysis</strong> and <strong>user interviews</strong> both helped me see what user needs the
               market has not yet met--seamlessly integrated social features with an intuitive interface.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_competitive_research@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_competitive_research@2x.jpg" alt="Competitive Research">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_affinity_map@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_affinity_map@2x.jpg" alt="Affinity Mapping">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_competitive_research@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_competitive_research@2x.jpg" alt="Competitive Research">
+                  </picture>
+                </div>
+                <p class="project-details">Competitive Research </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_affinity_map@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_affinity_map@2x.jpg" alt="Affinity Mapping">
+                  </picture>
+                </div>
+                <p class="project-details">Affinity Mapping </p>
+              </div>
             </div>
           </div>
           <!--observations and insights wrapper (end)-->
@@ -79,58 +93,121 @@
             <!--conceptualization wrapper (start)-->
             <h3>Conceptualization</h3>
             <p><strong>User personas</strong> were created based on data gathered from research and interviews.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Lina@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Lina@2x.jpg" alt="Persona-Lina Abbott">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Eliza@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Eliza@2x.jpg" alt="Persona-Eliza Woodford">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Alex@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Alex@2x.jpg" alt="Persona-Alex Wong">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Lina@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Lina@2x.jpg" alt="Persona-Lina Abbott">
+                  </picture>
+                </div>
+                <p class="project-details">Persona- Lina Abbott </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Eliza@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Eliza@2x.jpg" alt="Persona-Eliza Woodford">
+                  </picture>
+                </div>
+                <p class="project-details">Persona- Eliza Woodford </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_persona_Alex@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_persona_Alex@2x.jpg" alt="Persona-Alex Wong">
+                  </picture>
+                </div>
+                <p class="project-details">Persona- Alex Wong </p>
+              </div>
             </div>
             <p>From this stage, the information architecture for Schnitzeljagd began to take shape through <strong>user journeys</strong> and <strong>user flows</strong>.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Lina@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Lina@2x.jpg" alt="User Journey-Lina Abbott">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Eliza@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Eliza@2x.jpg" alt="User Journey-Eliza Woodford">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Alex@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Alex@2x.jpg" alt="User Journey-Alex Wong">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Lina@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Lina@2x.jpg" alt="User Flow-Lina Abbott">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Eliza@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Eliza@2x.jpg" alt="User Flow-Eliza Woodford">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Alex@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Alex@2x.jpg" alt="User Flow-Alex Wong">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Lina@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Lina@2x.jpg" alt="User Journey-Lina Abbott">
+                  </picture>
+                </div>
+                <p class="project-details">User Journey- Lina Abbott </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Eliza@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Eliza@2x.jpg" alt="User Journey-Eliza Woodford">
+                  </picture>
+                </div>
+                <p class="project-details">User Journey- Eliza Woodford </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Alex@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_journey_Alex@2x.jpg" alt="User Journey-Alex Wong">
+                  </picture>
+                </div>
+                <p class="project-details">User Journey- Alex Wong </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Lina@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Lina@2x.jpg" alt="User Flow-Lina Abbott">
+                  </picture>
+                </div>
+                <p class="project-details">User Flow- Lina Abbott </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Eliza@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Eliza@2x.jpg" alt="User Flow-Eliza Woodford">
+                  </picture>
+                </div>
+                <p class="project-details">User Flow- Eliza Woodford </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Alex@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_user_flow_Alex@2x.jpg" alt="User Flow-Alex Wong">
+                  </picture>
+                </div>
+                <p class="project-details">User Flow- Alex Wong </p>
+              </div>
             </div>
             <p>The app’s preliminary framework was finally put to the test through <strong>card sorting</strong>. This helped me rework the sitemap that the
               prototype would be based on.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_card_sort_results@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_card_sort_results@2x.jpg" alt="Card Sorting Results">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schitzlejagd_sitemap@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schitzlejagd_sitemap@2x.jpg" alt="Site Map">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_card_sort_results@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_card_sort_results@2x.jpg" alt="Card Sorting Results">
+                  </picture>
+                </div>
+                <p class="project-details">Card Sorting Results </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schitzlejagd_sitemap@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schitzlejagd_sitemap@2x.jpg" alt="Site Map">
+                  </picture>
+                </div>
+                <p class="project-details">Site Map </p>
+              </div>
             </div>
           </div>
           <!--conceptualization wrapper (end)-->
@@ -139,79 +216,164 @@
             <h3>Iteration</h3>
             <p>With a basic structure in place, it was time to bring the prototype to life! The <strong>wireframes</strong> began with rough sketches on pencil and
               paper. From there, I continued to make adjustments and add details until I had a testable prototype.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_low-fi_wireframes@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_low-fi_wireframes@2x.jpg" alt="Low-Fidelity Wireframes">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_mid-fi_wireframes@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_mid-fi_wireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_high-fi_wireframes@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_high-fi_wireframes@2x.jpg" alt="High-Fidelity Wireframes">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_low-fi_wireframes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_low-fi_wireframes@2x.jpg" alt="Low-Fidelity Wireframes">
+                  </picture>
+                </div>
+                <p class="project-details">Low-Fidelity Wireframes </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_mid-fi_wireframes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_mid-fi_wireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
+                  </picture>
+                </div>
+                <p class="project-details">Mid-Fidelity Wireframes </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_high-fi_wireframes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_high-fi_wireframes@2x.jpg" alt="High-Fidelity Wireframes">
+                  </picture>
+                </div>
+                <p class="project-details">High-Fidelity Wireframes </p>
+              </div>
             </div>
             <p>In the first round of <strong>usability testing</strong> the main goal was to test the functionality of Schnitzeljagd’s core features--setting up a
               scavenger hunt and submitting a mission in an active scavenger hunt. These were the three most severe issues:</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue1@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue1@2x.jpg" alt="Issue 1">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue2@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue2@2x.jpg" alt="Issue 2">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue3@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue3@2x.jpg" alt="Issue 3">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue1@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue1@2x.jpg" alt="Issue 1">
+                  </picture>
+                </div>
+                <p class="project-details">Issue 1 </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue2@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue2@2x.jpg" alt="Issue 2">
+                  </picture>
+                </div>
+                <p class="project-details">Issue 2 </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_design_issue3@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_design_issue3@2x.jpg" alt="Issue 3">
+                  </picture>
+                </div>
+                <p class="project-details">Issue 3 </p>
+              </div>
             </div>
             <p>Due to the divided opinions on how the app’s landing and onboarding screens were presented, I decided that this would be a good
               area to conduct a <strong>preference test</strong>.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test1@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test1@2x.jpg" alt="What Was Tested">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test2@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test2@2x.jpg" alt="Testing Results">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test3@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test3@2x.jpg" alt="Design Updates">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test1@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test1@2x.jpg" alt="What Was Tested">
+                  </picture>
+                </div>
+                <p class="project-details">What Was Tested </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test2@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test2@2x.jpg" alt="Testing Results">
+                  </picture>
+                </div>
+                <p class="project-details">Testing Results </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_preference_test3@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_preference_test3@2x.jpg" alt="Design Updates">
+                  </picture>
+                </div>
+                <p class="project-details">Design Updates </p>
+              </div>
             </div>
             <p>Using these new sets of data, I had enough knowledge to start making improvements to the prototype! I also paid close attention to
               incorporating more Gestalt Properties and Visual Design Principles. A <strong>style guide</strong> was compiled from the improved prototype.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_1@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_1@2x.jpg" alt="Color">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_2@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_2@2x.jpg" alt="Typography">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_3@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_3@2x.jpg" alt="Iconography">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_4@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_4@2x.jpg" alt="UI Elements 1">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_5@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_5@2x.jpg" alt="UI Elements 2">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_6@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_6@2x.jpg" alt="UI Elements 3">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_1@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_1@2x.jpg" alt="Color">
+                  </picture>
+                </div>
+                <p class="project-details">Color </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_2@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_2@2x.jpg" alt="Typography">
+                  </picture>
+                </div>
+                <p class="project-details">Typography </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_3@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_3@2x.jpg" alt="Iconography">
+                  </picture>
+                </div>
+                <p class="project-details">Iconography </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_4@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_4@2x.jpg" alt="UI Elements 1">
+                  </picture>
+                </div>
+                <p class="project-details">UI Elements 1 </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_5@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_5@2x.jpg" alt="UI Elements 2">
+                  </picture>
+                </div>
+                <p class="project-details">UI Elements 2 </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_6@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-Schnitzeljagd/Schnitzeljagd_style_guide_6@2x.jpg" alt="UI Elements 3">
+                  </picture>
+                </div>
+                <p class="project-details">UI Elements 3 </p>
+              </div>
             </div>
           </div>
           <!--iteration wrapper (end)-->
