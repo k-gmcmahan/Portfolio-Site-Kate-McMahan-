@@ -9,19 +9,23 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
   <header id="header">
     <div class="container">
-      <img class="logo" src="img/icon.svg" alt="Kate McMahan">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/icon.svg" alt="Kate McMahan">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -60,7 +64,7 @@
             <p>Because there are a good number of other flashcard apps, it was vital to conduct thorough <strong>competitive research</strong> to determine where StudyFlex could better fulfill user needs. Supplemented with findings from <strong>user
                 interviews</strong>, I learned
               that people had different preferred methods for rote memorization. I also learned that a lack of customization options for creating flashcards significantly affected how useful the app was to users across different study subjects.</p>
-            <div class="picture grid">
+            <div class="picture-row">
               <div class="project">
                 <div class="project-preview">
                   <picture>
@@ -68,16 +72,28 @@
                     <img src="img/1200px/Project-StudyFlex/StudyFlex_competitive_research_quizlet@2x.jpg" alt="Competitive Research- Quizlet">
                   </picture>
                 </div>
+                <p class="project-details">Competitive Research- Quizlet </p>
               </div>
-              <p class="project-details">Competitive Research- Quizlet </p>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_competitive_research_cram@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_competitive_research_cram@2x.jpg" alt="Competitive Research- Cram">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_interview_notes@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_user_interview_notes@2x.jpg" alt="User Interview Notes">
-              </picture>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_competitive_research_cram@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_competitive_research_cram@2x.jpg" alt="Competitive Research- Cram">
+                  </picture>
+                </div>
+                <p class="project-details">Competitive Research- Cram </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_interview_notes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_user_interview_notes@2x.jpg" alt="User Interview Notes">
+                  </picture>
+                </div>
+                <p class="project-details">User Interview Notes </p>
+              </div>
             </div>
           </div>
 
@@ -85,31 +101,58 @@
             <!--conceptualization class (start)-->
             <h3>Conceptualization</h3>
             <p><strong>User personas</strong>, <strong>user stories</strong>, and <strong>job stories</strong> were created based on data gathered from research and interviews.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_persona@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_persona@2x.jpg" alt="Persona-Jeff Benson">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_stories@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_user_stories@2x.jpg" alt="User Stories">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_job_stories@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_job_stories@2x.jpg" alt="Job Stories">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_persona@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_persona@2x.jpg" alt="Persona-Jeff Benson">
+                  </picture>
+                </div>
+                <p class="project-details">Persona- Jeff Benson </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_stories@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_user_stories@2x.jpg" alt="User Stories">
+                  </picture>
+                </div>
+                <p class="project-details">User Stories </p>
+              </div>
+            </div>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_job_stories@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_job_stories@2x.jpg" alt="Job Stories">
+                  </picture>
+                </div>
+                <p class="project-details">Job Stories </p>
+              </div>
             </div>
             <p>Next, I determined the most vital tasks in StudyFlex that I wanted to test later on in usability testing. <strong>Task analyses</strong> and <strong>user flows</strong>
               were then created based on these tasks.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_task_analysis@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_task_analysis@2x.jpg" alt="Task Analysis">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_flow@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_user_flow@2x.jpg" alt="User Flow">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_task_analysis@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_task_analysis@2x.jpg" alt="Task Analysis">
+                  </picture>
+                </div>
+                <p class="project-details">Task Analysis </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_user_flow@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_user_flow@2x.jpg" alt="User Flow">
+                  </picture>
+                </div>
+                <p class="project-details">User Flow </p>
+              </div>
             </div>
           </div>
           <!--conceptualization class (end)-->
@@ -122,15 +165,25 @@
               decided this would be a good point in the process to conduct the first <strong>usability test</strong>. </p>
             <p>Users were asked to complete 4 key tasks: creating an account, creating an new study set, editing an existing study set, and
               reviewing a study set. Each testing session was recorded and analyzed according to Jakob Nielsen’s Error Severity Rating Scale​​​​​​​.</p>
-            <div class="picture grid">
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_low-fi_prototype@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_low-fi_prototype@2x.jpg" alt="Low-Fidelity Wireframes">
-              </picture>
-              <picture>
-                <source srcset="img/600px/Project-StudyFlex/StudyFlex_test_report@1x.jpg" media="(max-width:767px)">
-                <img src="img/1200px/Project-StudyFlex/StudyFlex_test_report@2x.jpg" alt="Usability Test Report">
-              </picture>
+            <div class="picture-row">
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_low-fi_prototype@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_low-fi_prototype@2x.jpg" alt="Low-Fidelity Wireframes">
+                  </picture>
+                </div>
+                <p class="project-details">Low-Fidelity Wireframes </p>
+              </div>
+              <div class="project">
+                <div class="project-preview">
+                  <picture>
+                    <source srcset="img/600px/Project-StudyFlex/StudyFlex_test_report@1x.jpg" media="(max-width:767px)">
+                    <img src="img/1200px/Project-StudyFlex/StudyFlex_test_report@2x.jpg" alt="Usability Test Report">
+                  </picture>
+                </div>
+                <p class="project-details">Usability Test Report </p>
+              </div>
             </div>
           </div>
           <!--iteration wrapper (end)-->
