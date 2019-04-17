@@ -221,6 +221,7 @@ a:focus {
 /* js styling*/
 .project {
   text-align: center;
+  padding-top: 30px;
 }
 
 .project-details {
