@@ -218,6 +218,26 @@ a:focus {
   opacity: 0.8;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  background: #FFFFFF;
+  color: #CE695B !important;
+  border-radius: 30px;
+  border: 2px solid #CE695B;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background: #CE695B;
+  color: #ffffff !important;
+  transition: 0.2s opacity;
+  font-weight: 700;
+}
+
 /* js styling*/
 .project {
   text-align: center;
