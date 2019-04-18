@@ -219,23 +219,7 @@ a:focus {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: inline-block;
-  padding: 1em;
-  margin: 1em;
-  background: #FFFFFF;
-  color: #CE695B !important;
-  border-radius: 30px;
-  border: 2px solid #CE695B;
-}
-.back-to-top:hover {
-  cursor: pointer;
-  background: #CE695B;
-  color: #ffffff !important;
-  transition: 0.2s opacity;
-  font-weight: 700;
+  display: none;
 }
 
 /* js styling*/
@@ -246,7 +230,7 @@ a:focus {
 
 .project-details {
   display: none;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 /* Layout styling */
@@ -329,7 +313,9 @@ footer {
 
 #hero {
   background-color: #E38C3F;
-  padding: 20px 0;
+  background-image: url("C:/Users/Kate McMahan/Desktop/Portfolio Site (Kate McMahan)/img/1200px/hero@2x.jpg");
+  background-size: cover;
+  padding: 100px 0;
   display: inline-block;
   width: 100%;
 }
@@ -423,6 +409,10 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
+
+  .back-to-top {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -456,6 +446,27 @@ Large devices (1024px or larger)
 
   .picture-row {
     display: inline-flex;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    background: #FFFFFF;
+    color: #CE695B !important;
+    border-radius: 30px;
+    border: 2px solid #CE695B;
+  }
+
+  .back-to-top:hover {
+    cursor: pointer;
+    background: #CE695B;
+    color: #ffffff !important;
+    transition: 0.2s opacity;
+    font-weight: 700;
   }
 }
 
