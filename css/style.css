@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Purple): #714476; RGB (113,68,118)
-Secondary Color (Orange): #E38C3F; RGB (227,140,63)
+Secondary Color (Orange): #E38C3F; RGB (227,140,63) #DF7B23
 Balancing Color (Red): #CE695B; RGB (206,105,91)
 Background Color (White): #FFFFFF; RGB (255,255,255)
 */
@@ -29,7 +29,8 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  color: #E38C3F;
+  color: #df7b23;
+  background-color: inherit;
   text-align: center;
   padding-bottom: 24px;
 }
@@ -38,41 +39,48 @@ h2 {
   font-size: 2.25em;
   font-weight: 700;
   color: #714476;
+  background-color: inherit;
   text-align: center;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  color: #E38C3F;
+  color: #DF7B23;
+  background-color: inherit;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
   color: #CE695B;
+  background-color: inherit;
 }
 
 strong {
   font-weight: 700;
   color: #714476;
+  background-color: inherit;
 }
 
 .footer h2 {
   font-size: 2.25em;
   font-weight: 700;
   color: #FFFFFF;
+  background-color: inherit;
   text-align: center;
 }
 
 .project-details {
   color: #CE695B;
+  background-color: inherit;
 }
 
 #hero h1 {
   font-size: 2.75em;
   font-weight: 700;
   color: #FFFFFF;
+  background-color: inherit;
   text-align: center;
   padding-bottom: 24px;
 }
@@ -86,6 +94,7 @@ strong {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #FFFFFF;
+  background-color: inherit;
 }
 
 #contact p {
@@ -97,6 +106,7 @@ strong {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #FFFFFF;
+  background-color: inherit;
 }
 
 /* image styling*/
@@ -112,10 +122,12 @@ img {
 a {
   color: #714476;
   text-decoration: none;
+  background-color: inherit;
 }
 
 a:visited {
   color: #714476;
+  background-color: inherit;
 }
 
 a:hover,
@@ -124,41 +136,41 @@ a:focus {
   text-decoration: underline;
 }
 
-a:active {
+s a:active {
   color: #CE695B;
 }
 
 #header a {
   color: #FFFFFF;
+  background-color: inherit;
   text-decoration: none;
 }
 
 #header a:hover,
 a:focus {
-  color: #E38C3F;
+  color: #DF7B23;
   text-decoration: none;
   font-weight: 700;
 }
 
 #header a:active {
-  color: #E38C3F;
+  color: #DF7B23;
   font-weight: 700;
 }
 
 #contact a {
-  color: #E38C3F;
+  color: #DF7B23;
   text-decoration: none;
 }
 
 #contact a:hover,
 a:focus {
-  color: #E38C3F;
   text-decoration: underline;
   font-weight: 700;
 }
 
 #contact a:active {
-  color: #E38C3F;
+  color: #DF7B23;
   font-weight: 700;
 }
 
@@ -235,6 +247,7 @@ a:focus {
 
 /* Layout styling */
 header {
+  color: inherit;
   background-color: #714476;
   padding: 10px 0 4px;
   position: fixed;
@@ -259,6 +272,7 @@ main {
 }
 
 footer {
+  color: inherit;
   background-color: #714476;
   text-align: center;
   padding: 10px 0;
@@ -312,7 +326,8 @@ footer {
 }
 
 #hero {
-  background-color: #E38C3F;
+  color: inherit;
+  background-color: #DF7B23;
   background-image: url("C:/Users/Kate McMahan/Desktop/Portfolio Site (Kate McMahan)/img/1200px/hero@2x.jpg");
   background-size: cover;
   padding: 100px 0;
@@ -497,7 +512,7 @@ Large devices (1024px or larger)
   }
 }
 
-.trees, .cloud_1, .cloud_2, .cloud_3 {
+.trees .cloud_1 .cloud_2 .cloud_3 {
   animation: 4s color-change infinite alternate linear;
 }
 
