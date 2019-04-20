@@ -1,30 +1,31 @@
 function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
+  var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
 }
 
 $(document).ready(function() {
-  $(".project-preview").on("click", function() {
-    $(this).siblings(".project-details").slideToggle();
-  });
-});
+  $('.project-preview').on('click', function() {
+    $(this).siblings('.project-details').slideToggle()
+  })
+})
 
-var $backToTop = $(".back-to-top");
-$backToTop.hide();
-
+var $backToTop = $('.back-to-top')
+$backToTop.hide()
 
 $(window).on('scroll', function() {
   if ($(this).scrollTop() > 100) {
-    $backToTop.fadeIn();
+    $backToTop.fadeIn()
   } else {
-    $backToTop.fadeOut();
+    $backToTop.fadeOut()
   }
-});
+})
 
 $backToTop.on('click', function(e) {
-  $("html, body").animate({scrollTop: 0}, 500);
-});
+  $('html, body').animate({
+    scrollTop: 0
+  }, 500)
+})
