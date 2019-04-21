@@ -1,4 +1,4 @@
-function menuToggle() {
+function menuToggle () {
   var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
     x.className += ' responsive'
@@ -7,8 +7,8 @@ function menuToggle() {
   }
 }
 
-$(document).ready(function() {
-  $('.project-preview').on('click', function() {
+$(document).ready(function () {
+  $('.project-preview').on('click', function () {
     $(this).siblings('.project-details').slideToggle()
   })
 })
@@ -16,7 +16,7 @@ $(document).ready(function() {
 var $backToTop = $('.back-to-top')
 $backToTop.hide()
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   if ($(this).scrollTop() > 100) {
     $backToTop.fadeIn()
   } else {
@@ -24,7 +24,7 @@ $(window).on('scroll', function() {
   }
 })
 
-$backToTop.on('click', function(e) {
+$backToTop.on('click', function (e) {
   $('html, body').animate({
     scrollTop: 0
   }, 500)
